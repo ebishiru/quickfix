@@ -18,6 +18,7 @@ export default function Header() {
                 <div className="hidden sm:flex gap-4">
                     <Link href="/">Home</Link>
                     <Link href="/about">About</Link>
+                    <Link href="/services">Services</Link>
                     <Link href="/contact">Contact</Link>
                     <button onClick={toggleTheme}>
                         {theme === "light" ? "🌙" : "☀️"}
@@ -28,6 +29,7 @@ export default function Header() {
             <nav className={`${open ? 'block' : 'hidden'} flex flex-col justify-content items-center gap-3 sm:hidden p-4 bg-indigo-100 font-bold text-indigo-800 dark:bg-indigo-800 dark:text-indigo-100`}>
                 <Link href="/" onClick={() => setOpen(!open)}>Home</Link>
                 <Link href="/about" onClick={() => setOpen(!open)}>About</Link>
+                <Link href="/services" onClick={() => setOpen(!open)}>Services</Link>
                 <Link href="/contact" onClick={() => setOpen(!open)}>Contact</Link>
                 <button onClick={toggleTheme}>
                     {theme === "light" ? "🌙" : "☀️"}
