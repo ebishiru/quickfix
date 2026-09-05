@@ -1,6 +1,5 @@
 "use client"
 
-import React from "react";
 import { useTheme } from "./themeProvider";
 
 export default function Footer() {

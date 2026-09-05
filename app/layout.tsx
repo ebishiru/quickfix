@@ -15,7 +15,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-screen flex flex-col">
         <ThemeProvider>
           <Header />
-          <main className="flex-1 px-2">
+          <main className="flex flex-1 flex-col">
             {children}
           </main>
           <Footer />

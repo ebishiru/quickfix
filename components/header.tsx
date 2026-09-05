@@ -31,7 +31,7 @@ export default function Header() {
                 <Link href="/about" onClick={() => setOpen(!open)}>About</Link>
                 <Link href="/services" onClick={() => setOpen(!open)}>Services</Link>
                 <Link href="/contact" onClick={() => setOpen(!open)}>Contact</Link>
-                <button onClick={toggleTheme}>
+                <button onClick={() => { toggleTheme(); setOpen(!open); }}>
                     {theme === "light" ? "🌙" : "☀️"}
                 </button>
             </nav>
